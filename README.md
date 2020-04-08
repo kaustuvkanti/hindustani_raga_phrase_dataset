@@ -1,12 +1,12 @@
 [![DOI](https://zenodo.org/badge/39132186.svg)](https://zenodo.org/badge/latestdoi/39132186) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ff69b4.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/) [![Build Status](https://travis-ci.org/MTG/otmm_makam_recognition_dataset.svg?branch=master)](https://travis-ci.org/MTG/otmm_makam_recognition_dataset)
 
-# OTMM Makam Recognition Dataset 
+# Hindustani Raga Phrase Dataset 
 
-This repository hosts the dataset designed to test makam recognition methodologies on Ottoman-Turkish makam music. It is composed of 50 recordings from each of the 20 most common makams in [CompMusic Project](http://compmusic.upf.edu/)'s [Dunya](http://dunya.compmusic.upf.edu/) Ottoman-Turkish Makam Music collection. Currently, the dataset is the largest makam recognition dataset.
+This repository hosts the dataset designed to test melodic phrase shape characterization methodologies on Hindustani raga music. It is composed of 12 recordings from ragas Deshkar and Bhupali in [CompMusic Project](http://compmusic.upf.edu/)'s [Dunya](http://dunya.compmusic.upf.edu/) Hindustani Music collection.
 
 Please cite the publication below, if you use this dataset in your work:
 
-> Karakurt, A., Şentürk S., & Serra X. (2016).  [MORTY: A Toolbox for Mode Recognition and Tonic Identification](http://mtg.upf.edu/node/3538). 3rd International Digital Libraries for Musicology Workshop. New York, USA
+> Ganguli, K.~K. (2019).  [MORTY: A Toolbox for Mode Recognition and Tonic Identification](http://mtg.upf.edu/node/3538). PhD thesis, Indian Institute of Technology Bombay, Mumbai, India.
 
 The recordings are selected from commercial recordings carefully such that they cover diverse musical forms, vocal/instrumentation settings, and recording qualities (e.g. historical vs contemporary). Each recording in the dataset is identified by a 16-character long unique identifier called MBID, hosted in [MusicBrainz](http://musicbrainz.org). The makam and the tonic of each recording are annotated in the file [annotations.json](https://github.com/MTG/otmm_makam_recognition_dataset/blob/master/annotations.json).
 
