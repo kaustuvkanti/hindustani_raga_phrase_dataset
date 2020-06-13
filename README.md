@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/39132186.svg)](https://zenodo.org/badge/latestdoi/39132186) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ff69b4.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/) [![Build Status](https://travis-ci.org/MTG/otmm_makam_recognition_dataset.svg?branch=master)](https://travis-ci.org/MTG/otmm_makam_recognition_dataset)
+%[![DOI](https://zenodo.org/badge/39132186.svg)](https://zenodo.org/badge/latestdoi/39132186) 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ff69b4.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Hindustani Raga Phrase Dataset 
 
@@ -6,23 +7,15 @@ This repository hosts the dataset designed to test melodic phrase shape characte
 
 Please cite the publication below, if you use this dataset in your work:
 
-> Ganguli, K.~K. (2019).  [MORTY: A Toolbox for Mode Recognition and Tonic Identification](http://mtg.upf.edu/node/3538). PhD thesis, Indian Institute of Technology Bombay, Mumbai, India.
+> Ganguli, K.~K. (2019).  [A Corpus-based Approach to the Computational Modeling of Melody in Raga Music](https://scholar.google.com/citations?user=uhYmMbgAAAAJ&hl=en). PhD thesis, Indian Institute of Technology Bombay, Mumbai, India.
 
-The recordings are selected from commercial recordings carefully such that they cover diverse musical forms, vocal/instrumentation settings, and recording qualities (e.g. historical vs contemporary). Each recording in the dataset is identified by a 16-character long unique identifier called MBID, hosted in [MusicBrainz](http://musicbrainz.org). The makam and the tonic of each recording are annotated in the file [annotations.json](https://github.com/MTG/otmm_makam_recognition_dataset/blob/master/annotations.json).
+The recordings are selected from commercial recordings carefully such that they cover diverse musical forms, vocal settings, and recording qualities (e.g. historical vs contemporary spanning over six decades). Most of the recordings in the dataset are identified by a 16-character long unique identifier called MBID, hosted in [MusicBrainz](http://musicbrainz.org).
 
-The audio-related data in the test dataset is organized by each makam in the folder [data](https://github.com/MTG/otmm_makam_recognition_dataset/blob/master/data). Due to copyright reasons, we are unable to distribute the audio. Instead, we provide the predominant melody of each recording, computed by a state-of-the-art [predominant melody extraction algorithm](https://github.com/sertansenturk/predominantmelodymakam/commit/f8b7302bc657f90e2b10a0ffd988902935adc3d6) optimized for OTMM culture. These features are saved as text files (with the paths `data/[makam]/[mbid].pitch`) of a single column that contains the frequency values. The timestamps are removed to reduce the filesizes. The step size of the pitch track is 0.0029 seconds (an analysis window of 128 samples hop size of an mp3 with 44100 Hz sample rate), with which one can recompute the timestamps of samples. 
-
-Moreover, the metadata of each recording is available in the repository, crawled from MusicBrainz using an [open source tool developed by us](https://github.com/sertansenturk/makammusicbrainz). The metadata files are saved as `data/[makam]/[mbid].json`.
-
-For reproducibility purposes, we note the version of all tools we have used to generate this dataset in the file [algorithms.json](https://github.com/MTG/otmm_makam_recognition_dataset/blob/master/algorithms.json).
-
-A complementary toolbox for this dataset is [MORTY](https://github.com/altugkarakurt/morty), which is a mode recognition and tonic identification toolbox. It can be used and optimized for any modal music culture. Further details are explained in the publication above. 
-
-For more information, please contact the authors.
+The audio-related data in the test dataset is organized by each raga in the folder "data". Due to copyright reasons, we are unable to distribute all the audio. Instead, we provide the MBIDs or YouTube links. For more information, please contact the authors.
 
 Erratum
 ------------
-In November 2016, we discovered several errors in the tonic annotations. We are currently verifying the annotations. See the description in [otmm_tonic_dataset](https://github.com/MTG/otmm_tonic_dataset#erratum) for more details and up-to-date progress.
+We are currently verifying the annotations for boundary precision. This is more aligned to do with the publishing of the dataset and doe not relate to the analysis reported in the article.
 
 <a name="License"></a>License
 --------------------
